@@ -6,7 +6,44 @@
 @use './responsive';
 
 
-body {
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
   margin: 0;
+}
+
+body {
   font-family: Arial, sans-serif;
+  background: #f5f7fa;
+  color: #1f2933;
+}
+
+button {
+  cursor: pointer;
+}
+
+.public-layout,
+.dashboard-layout {
+  min-height: 100vh;
+}
+
+.dashboard-layout__content,
+.landing-page__container,
+.login-page__container,
+.dashboard-page,
+.events-page,
+.jobs-page,
+.partners-page,
+.participants-page,
+.documents-page,
+.resume-builder-page,
+.admin-page,
+.not-authorized-page,
+.not-found-page {
+  padding: 2rem;
 }

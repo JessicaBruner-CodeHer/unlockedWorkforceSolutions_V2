@@ -1,8 +1,14 @@
+import { BrowserRouter } from 'react-router-dom';
+import AppProviders from './app/appProviders';
+import AppRoutes from './app/appRoutes';
+
 function App() {
   return (
-    <div>
-      <h1>Unlocked Workforce Solutions V2</h1>
-    </div>
+    <BrowserRouter>
+      <AppProviders>
+        <AppRoutes />
+      </AppProviders>
+    </BrowserRouter>
   );
 }
 
