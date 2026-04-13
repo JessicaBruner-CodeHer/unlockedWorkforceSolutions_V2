@@ -1,0 +1,12 @@
+@use './variables';
+@use './mixins';
+@use './globals';
+@use './layout';
+@use './components';
+@use './responsive';
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
