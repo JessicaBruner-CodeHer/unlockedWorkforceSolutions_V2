@@ -1,21 +1,24 @@
-import { Link } from 'react-router-dom';
+import uwsLogo from '../../assets/images/unlocked_workforce_solutions_logo_transparent.png';
 
 function LandingPage() {
   return (
-    <section className="page page--public">
-      <div className="page__content">
-        <h1>Unlocked Workforce Solutions</h1>
-        <p>
-          Workforce partnership, participant progress, employer engagement, and
-          outcome reporting in one system.
-        </p>
-        <div className="page__actions">
-          <Link className="button-link" to="/login">
-            Enter Portal
-          </Link>
+    <div className="landing-page">
+      <section className="landing-hero">
+        <div className="landing-hero__content">
+          <div className="landing-hero__logo-wrap">
+            <img
+              src={uwsLogo}
+              alt="Unlocked Workforce Solutions logo"
+              className="landing-hero__logo"
+            />
+          </div>
+
+          <h1 className="landing-hero__tagline">
+            One Community. Endless Opportunity. Real Transformation.
+          </h1>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 }
 
