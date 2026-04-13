@@ -1,9 +1,13 @@
 import { Outlet } from 'react-router-dom';
+import Navbar from './Navbar';
 
 function PublicLayout() {
   return (
     <div className="public-layout">
-      <Outlet />
+      <Navbar />
+      <main className="public-layout__content">
+        <Outlet />
+      </main>
     </div>
   );
 }

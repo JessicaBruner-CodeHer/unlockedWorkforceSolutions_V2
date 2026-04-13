@@ -1,8 +1,10 @@
 function DashboardPage() {
   return (
-    <section className="dashboard-page">
-      <h1>Dashboard</h1>
-      <p>Protected dashboard route is working.</p>
+    <section className="page">
+      <div className="page__content">
+        <h1>Internal Dashboard</h1>
+        <p>Internal reporting and operational summary will live here.</p>
+      </div>
     </section>
   );
 }
