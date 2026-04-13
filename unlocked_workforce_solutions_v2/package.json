@@ -1,17 +1,21 @@
 {
-  "name": "unlocked_workforce_solutions_v2",
+  "name": "unlocked-workforce-solutions-v2",
   "version": "1.0.0",
-  "description": "",
+  "private": true,
+  "description": "Unlocked Workforce Solutions V2 full-stack MERN application",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "client": "npm run dev --prefix client",
+    "server": "npm run dev --prefix server",
+    "build": "npm run build --prefix client",
+    "install:all": "npm install && npm install --prefix client && npm install --prefix server"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "devDependencies": {
     "concurrently": "^9.2.1",
-    "nodemon": "^3.1.14"
+    "nodemon": "^3.1.10"
   }
 }
